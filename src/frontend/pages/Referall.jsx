@@ -1,14 +1,12 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 //main function for the referral
-import image from "../components/images/Bgimage.jpeg";
 import emailjs from "emailjs-com";
+import image from "../components/images/Bgimage.jpeg";
 import React from 'react'
 function Referral() {
   const [referredEmail, setReferredEmail] = useState("");
-  
 
-  function notifyEmployee(e) {
+  function sendEmail(e) {
     e.preventDefault();
     emailjs.send(
       "service_i6axn1p",
@@ -33,15 +31,17 @@ function Referral() {
         </div>
         <input
           type={"email"}
-          placeholder="Refer a friend"
+          placeholder="Email a referral"
           className="referral-input"
           //onChange passes the entire tag as the variable e, reads target is the elements inside the tag, and value is the typed value
           onChange={(e) => {
             setReferredEmail(e.target.value);
           }}
         ></input>
-        
-        <div class="referral-code-background">Your Referral Code</div>
+        <button className="employeeEmail-btn" onClick={sendEmail}>
+          Send Email
+        </button>
+        <div className="referral-code-background">Your Referral Code</div>
       </div>
     </div>
   );
