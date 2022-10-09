@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import image from "../components/images/Bgimage.jpeg";
-
+import React from 'react'
 function Login() {
   const [email, setEmail] = useState(""); //string variabels
   const [advantage, setAdvantage] = useState(""); //string variabels

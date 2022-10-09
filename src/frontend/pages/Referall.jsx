@@ -2,7 +2,7 @@ import React, { useState } from "react";
 //main function for the referral
 import emailjs from "emailjs-com";
 import image from "../components/images/Bgimage.jpeg";
-
+import React from 'react'
 function Referral() {
   const [referredEmail, setReferredEmail] = useState("");
 
