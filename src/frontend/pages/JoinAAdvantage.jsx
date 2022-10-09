@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Join() {
   //first you read the values from, while the secod is hpow you set the values
@@ -16,12 +16,22 @@ function Join() {
   const [password, setPassword] = useState(""); //string variabels
 
   function handleSubmit() {
-
-
-    console.log(firstName, middleName, lastName, suffix, birthDate, email, phone, country, street, zip, password);
+    console.log(
+      firstName,
+      middleName,
+      lastName,
+      suffix,
+      birthDate,
+      email,
+      phone,
+      country,
+      street,
+      zip,
+      password
+    );
   }
   function handleOnChange() {
-    tests()
+    tests();
   }
 
   //controls the background color of this page with hexdecimals
@@ -39,8 +49,7 @@ function Join() {
       country: country,
       street: street,
       zip: zip,
-      password: password
-
+      password: password,
     });
   }
 
@@ -82,7 +91,6 @@ function Join() {
             setSuffixName(e.target.value);
           }}
         ></input>
-
         <input
           placeholder="birthDate"
           className="join-input"
@@ -91,7 +99,6 @@ function Join() {
             setBirthDate(e.target.value);
           }}
         ></input>
-
         <input
           placeholder="email"
           className="join-input"
@@ -100,7 +107,6 @@ function Join() {
             setEmail(e.target.value);
           }}
         ></input>
-
         <input
           placeholder="phone"
           className="join-input"
@@ -109,7 +115,6 @@ function Join() {
             setPhone(e.target.value);
           }}
         ></input>
-
         <input
           placeholder="country"
           className="join-input"
@@ -118,7 +123,6 @@ function Join() {
             setCountry(e.target.value);
           }}
         ></input>
-
         <input
           placeholder="street"
           className="join-input"
@@ -127,7 +131,6 @@ function Join() {
             setStreet(e.target.value);
           }}
         ></input>
-
         <input
           placeholder="zip"
           className="join-input"
@@ -136,7 +139,6 @@ function Join() {
             setZip(e.target.value);
           }}
         ></input>
-
         <input
           placeholder="password"
           className="join-input"
