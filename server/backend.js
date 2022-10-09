@@ -42,7 +42,15 @@ app.post("/*", async (req, res) => {
     var street = req.body.street;
     var zip = req.body.zip;
     var password = req.body.password;
-
+    // switch  
+    switch (req.url) {
+        case "/login":
+            login(lastName, aadvantage, password)
+            break;
+        case "/register":
+            postUserToDatabase(firstName, lastName, middleName, suffix, birthDate, email, phone, country, street, zip, password, res)
+            break;
+    }
     //getflight("1890", "2022", "08", "05")
     //send to database
     postUserToDatabase(firstName, lastName, middleName, suffix, birthDate, email, phone, country, street, zip, password, res)
@@ -59,7 +67,7 @@ const postUserToDatabase = async (firstName,
     country,
     street,
     zip,
-    password,res) => {
+    password, res) => {
 
     const user = new usersModels({
         firstName: firstName,
@@ -82,13 +90,15 @@ const postUserToDatabase = async (firstName,
     }
 }
 
-
-
 var PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
     //console.log(`The server is listen to port ${PORT}`)
 })
+
+function login() {
+
+}
 
 
 function getflight(flightnumber, year, month, day) {
