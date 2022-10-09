@@ -3,7 +3,8 @@ import { useState } from "react";
 //main function for the referral
 import image from "../components/images/Bgimage.jpeg";
 import emailjs from "emailjs-com";
-import image2 from "../components/images/AALogo.png";
+import Headshot from "../components/images/Headshot.jpg";
+import AALogo from "../components/images/AALogo.png";
 
 function Referral() {
   const [referredEmail, setReferredEmail] = useState("");
@@ -29,7 +30,7 @@ function Referral() {
           Referral Progress
           <div class="progress-button">
             <div class="progress-bar-fill"> </div>
-            <div class="percentage"> 20% </div>
+            <div class = "percentage"> 20% </div>
           </div>
         </div>
         <input
@@ -41,12 +42,16 @@ function Referral() {
             setReferredEmail(e.target.value);
           }}
         ></input>
-
-        <div class="referral-code-background">
-          Your Referral Code
-          <div class="referral-code"> X456-31FQ-I3OM-Z5HB</div>
+        <div class ="referral-code-background">Your Referral Code
+          <div class = "referral-code">  X456-31FQ-I3OM-Z5HB</div>
+            </div>
+        <div class = "Picture"> <img class="Headshot" src = {Headshot} /> </div>
+        <div class ="user-info">
+          <div> DeTavein Walker</div>
+          <div> AAdvantage&#8482; member</div>
+          <div> Referrals 1/5</div>
+          <div> Next incentive: 3 months Apple music</div>
         </div>
-
       </div>
     </div>
   );
