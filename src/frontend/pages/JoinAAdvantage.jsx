@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-
+import React from 'react'
 function Join() {
   //first you read the values from, while the secod is hpow you set the values
   const [firstName, setFirstName] = useState(""); //string variabels

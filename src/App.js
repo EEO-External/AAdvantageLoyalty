@@ -5,7 +5,7 @@ import Guest from './frontend/pages/Guest';
 import Join from './frontend/pages/JoinAAdvantage';
 import Login from './frontend/pages/Login';
 import Referral from './frontend/pages/Referall';
-
+import React from 'React'
 
 
 export default function App() {
