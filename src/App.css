@@ -192,7 +192,7 @@ body {
     width: 300px;
 }
 .referral-background {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -209,10 +209,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .referral-code-background {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -223,7 +224,7 @@ body {
     left: 0px;
     width: 300px;
     height: 50px;
-    top: 300px;
+    top: 280px;
     border-radius: 15px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -345,3 +346,36 @@ body {
     width: 20px;
     height: 20px;
 }
+.Picture{
+width: 100px;
+height: 100px;
+border-radius: 50px;
+overflow: hidden;
+margin: 0px auto;
+top: -76px;
+position: relative;}
+.Headshot{    width: 100%;
+    position: relative;
+    top: -16px;
+    right: -1px;}
+
+.user-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    position: relative;
+    left: 0px;
+    width: 300px;
+    height: 125px;
+    top: -80px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: bold;}
