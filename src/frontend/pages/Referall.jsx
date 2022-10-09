@@ -29,7 +29,7 @@ function Referral() {
           Referral Progress
           <div class="progress-button">
             <div class="progress-bar-fill"> </div>
-            <div class = "percentage"> 20% </div>
+            <div class="percentage"> 20% </div>
           </div>
         </div>
         <input
@@ -41,11 +41,12 @@ function Referral() {
             setReferredEmail(e.target.value);
           }}
         ></input>
-        
-        <div class="referral-code-background">Your Referral Code
-          <div class = "referral-code"> X456-31FQ-I3OM-Z5HB</div>
-            </div>
-        
+
+        <div class="referral-code-background">
+          Your Referral Code
+          <div class="referral-code"> X456-31FQ-I3OM-Z5HB</div>
+        </div>
+
       </div>
     </div>
   );
