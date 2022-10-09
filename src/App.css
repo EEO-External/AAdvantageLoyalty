@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+html,body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.join-name-container{
+    /* width: 400px; */
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.join-birthday-container{
+    /* width: 400px; */
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.join-birthday-container{
+    position: relative;
+    top: 20px;
+    left:0px ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.join-container{
+    /* width: 400px; */
+    color: white;
+    position: relative;
+    left:0px ;
+    margin-bottom: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.join-input{
+    width: 380px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .development-end{
+    /* top: -120px; */
+    /* left: 400px; */
+    /* height: 2000px; */
+    /* position: absolute; */
+    /* border-right: 1px solid red; */
+}
+
+
+.starter-background{
+    width: 300px;
+}
+
+.referral-background{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* position: absolute; */
+    left: 18px;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    font-weight: bold; 
+}
+.referral-code-background{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    position: relative;
+    left: 0px;
+    width: 300px;
+    height: 50px;
+    top: 300px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.progress-button{ /*Progress bar backrground*/
+    background-color: #ffffff; 
+    border-color: rgb(255, 255, 255);
+    color: black;
+    padding: 15px 32px;
+    font-size: 16px;
+    /* position: absolute; */
+    width: 250px;
+    height: 0px;
+    border-radius: 50px;
+    position: relative;
+    top: 5px;
+    left: -6px;
+    /* margin: 10px auto; */
+}
+.Referral-code-underlay{ /*Progress bar backrground*/
+    background-color: #ffffff; 
+    border-color: rgb(255, 255, 255);
+    color: black;
+    padding: 15px 32px;
+    font-size: 16px;
+    /* position: absolute; */
+    width: 250px;
+    height: 0px;
+    border-radius: 50px;
+    position: relative;
+    top: 5px;
+    left: -6px;
+    text-align: center;
+    /* margin: 10px auto; */
+}
+.progress-bar-fill{
+    background-color: #0f63a3; 
+    border-color: rgb(255, 255, 254);
+    color: rgb(252, 0, 0);
+    padding: 15px 32px;
+    font-size: 16px;
+    /* position: absolute; */
+    width: 20px;
+    height: 0px;
+    border-radius: 50px;
+    
+    position: relative;
+    top: -15px;
+    left: -32px;
+}
+.referral-code{
+    font-size: medium;
+    color:black;
+    position: relative;
+    top: -10px;
+
+}
+.percentage{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 100%;
+}
+/* element.style {
+    background-image: url(/static/media/bg-image.4bec1cd….jpeg);
+    height: 400px;
+    /* opacity: .5; 
+    z-index: -4;
+} */
+.Body-background{
+    border: 1px solid;
+    height: 500px;
+    /* width: 400px; */
+    z-index: -2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.Phone-Wrapper{
+    width:400px;
+    margin:0px auto; 
 }
