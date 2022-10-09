@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 //main function for the referral
-import emailjs from "emailjs-com";
 import image from "../components/images/Bgimage.jpeg";
+import emailjs from "emailjs-com";
+import image2 from "../components/images/AALogo.png";
 
 function Referral() {
   const [referredEmail, setReferredEmail] = useState("");
+  
 
   function notifyEmployee(e) {
     e.preventDefault();
@@ -43,6 +46,7 @@ function Referral() {
           Your Referral Code
           <div class="referral-code"> X456-31FQ-I3OM-Z5HB</div>
         </div>
+
       </div>
     </div>
   );
