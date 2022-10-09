@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Join() {
   //first you read the values from, while the secod is hpow you set the values
@@ -14,7 +14,6 @@ function Join() {
   const [street, setStreet] = useState(""); //string variabels
   const [zip, setZip] = useState(""); //string variabels
   const [password, setPassword] = useState(""); //string variabels
-
 
   function handleSubmit() {
 
