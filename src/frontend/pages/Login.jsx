@@ -1,13 +1,30 @@
+import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import image from "../components/images/Bgimage.jpeg";
 
 function Login() {
   const [email, setEmail] = useState(""); //string variabels
-  const [password, setPassword] = useState(""); //string variabels
+  const [advantage, setAdvantage] = useState(""); //string variabels
+  const [lastname, setLastName] = useState("");
+  const navigate = useNavigate();
 
-  function handleSubmit() {
-    console.log(email, password);
-  }
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    axios
+      .post("http://localhost:3001/login", {
+        advantage: advantage,
+        lastname: lastname,
+        email: email,
+      })
+      .then(() => {
+        navigate("/referral");
+      });
+
+    // 👇️ redirect to /contacts
+  };
+  const sendEmail = async () => {
+  };
 
   return (
     <>
@@ -18,7 +35,7 @@ function Login() {
             className="join-input"
             //onChange passes the entire tag as the variable e, reads target is the elements inside the tag, and value is the typed value
             onChange={(e) => {
-              setEmail(e.target.value);
+              setLastName(e.target.value);
             }}
           ></input>
           <input
@@ -34,16 +51,11 @@ function Login() {
             className="join-input"
             //onChange passes the entire tag as the variable e, reads target is the elements inside the tag, and value is the typed value
             onChange={(e) => {
-              setPassword(e.target.value);
+              setAdvantage(e.target.value);
             }}
           ></input>
-
           <div className="join-container">
             <button onClick={handleSubmit}>Login In</button>
-            <div>
-              <button className="join-btn"> </button>
-            </div>
-            Join AAdvantage
           </div>
         </div>
       </div>
