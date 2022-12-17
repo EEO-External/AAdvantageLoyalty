@@ -44,10 +44,8 @@ app.post("/*", async (req, res) => {
     var password = req.body.password;
 
     //getflight("1890", "2022", "08", "05")
-
-    console.log("Hello");
     //send to database
-    //postUserToDatabase("Asa", "Rogers", "josiah", "Sr", "01-30-2000", "cyberasasoftware@gmail.com", "256-777-6287", "USA", "208-11 english rose circle", "35811", "A900@1491s")
+    postUserToDatabase(firstName, lastName, middleName, suffix, birthDate, email, phone, country, street, zip, password, res)
 
 })
 
@@ -61,7 +59,7 @@ const postUserToDatabase = async (firstName,
     country,
     street,
     zip,
-    password,) => {
+    password,res) => {
 
     const user = new usersModels({
         firstName: firstName,
@@ -78,7 +76,7 @@ const postUserToDatabase = async (firstName,
     })
     try {
         const savedUser = await user.save();
-        console.log(savedUser);
+        res.send(savedUser);
     } catch (error) {
         console.log(error)
     }
